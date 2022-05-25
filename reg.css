@@ -8,14 +8,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
    
 }
-.regist
-{
-    display:contents;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    
-}
+
 .input-box{
     height: 45px;
     width: 90%;
@@ -30,7 +23,7 @@ body{
     align-items: center;
     width: 450px;
     background-color:rgb(253, 231, 231);
-    height:550px;
+    height:600px;
     border-radius:50px;
     box-sizing:border-box;
     box-shadow: 0px 0px 20px;

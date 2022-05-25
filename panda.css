@@ -2,13 +2,16 @@ div.image{
     width: 200px;
     height: 100px;
 }
+.h3{
+    margin: 0px;
+}
 .img{
     width: 100px;
     height: 100px;
     margin-left: 0%;
     border-radius: 40%;
     margin-top: 0px;
-    opacity: initial;
+    opacity:0.5;
 
 }
 
@@ -16,6 +19,7 @@ div.image{
     background-color: rgba(16, 16, 16, 0.4);
     text-align: center;
     margin-left: 400px;
+    padding-bottom: 5px;
 
  
     
@@ -79,4 +83,12 @@ li{
 }
 body{
     background-color: rgb(85, 83, 83);
+}
+#fyp{
+    padding-bottom: 5px;
+    padding-right: 2px;
+    border: 0px;
+    margin: 0px;
+    color:aliceblue;
+    
 }
