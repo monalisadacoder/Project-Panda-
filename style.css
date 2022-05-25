@@ -28,8 +28,11 @@ body{
     margin-left: 30px;
 }
 .nav-link{
-    color: #000;
+    color: rgb(253, 252, 252);
 }
 .icon2{
     height: 18px;
+}
+#navbar-example3{
+    width: 200px;
 }
