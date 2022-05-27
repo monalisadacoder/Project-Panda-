@@ -93,7 +93,7 @@ body {
 }
   .sidenav {
     height: 78%;
-    width: 5%;
+    width: 0;
     position:absolute;
     z-index: 1;
     top: 10px;
@@ -203,7 +203,7 @@ body {
 
 
  
-.save{
+#save{
     text-decoration: none;
     margin-top: 70px;
     margin-left:1080px;
@@ -213,18 +213,19 @@ body {
     border-radius: 20px;
     background-color: #f9fbfc;
     border-color: red;
-    font-size:xx-large;
     transition: 0.5s;
     font-style: arial ;
   
 }
-.save :hover{
-   
+#save:hover{
+   background-color: #ec7f6c;
+   color: #f9fbfc;
     cursor: pointer;
     outline: none;
     text-decoration: none;
-    color:#f70404;
+    
 }
+
 .save.active{
     color: rgb(39, 167, 7);
 }
