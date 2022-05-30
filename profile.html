@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="weekly.js">
-    <title>Home Page</title>
-    <script>
+    <title>Profile Page</title>
+    <style>
+    p.p{
+    line-height: 5,}
+    
+        </style>
+    <!-- <script> 
       window.onload = function () {
       
       var dps = []; // dataPoints
@@ -52,7 +57,8 @@
       updateChart(dataLength);
       setInterval(function(){updateChart()}, updateInterval);
       
-      }</script></head>
+      }</script>-->
+    </head>
       
 <body>
   <div>
@@ -77,6 +83,8 @@
         
           
    </nav>
+   <span id="menuButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   
       <!-- side bar part -->
       <div id="mySidenav" class="sidenav">
         <li id="profileIcon"><h5>&nbsp;<img class="icon1" alt="users-icon" src="bxs_user-circle.png"></h5></li>
@@ -92,11 +100,22 @@
           <a href="weekly.html">Weekly</a>
           <a href="monthly.html">Monthly</a>
         </div>
-        <!-- <a href="#">Contact</a> -->
-      </div></div>
+        
+      </div>
+      <div class="profile">
+        <img class="picture" src="profile pic.jpg" alt="profileIcon" style="width:250px;height:250px;">
+      </div>
+      <div class="p">
+        <p><h3>Profile Name :</h3></p>
+        <p><h3>Gender :</h3></p>
+        <p><h3>Work Email :</h3></p>
+        <p><h3>Telephone number : </h3></p>
+        <p><h3>Shift :</h3></p>
+        <p><h3>Position :</h3></p>
+      </div>
+    </div>
      
-      <span id="menuButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-   
+      
       <script>
         function myFunction(x) {
           x.classList.toggle("change");
@@ -132,10 +151,11 @@
           });
         }
         </script>
-        <div id="chartContainer" style="height: 300px; width: 80%; float: right; ;"></div>
-        <button type="button" id="save" class="btn btn-outline-danger">
-          <a href="report.html" style="text-decoration:none ; color: rgb(241, 11, 11);">Download</a></button>
-      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <!-- <div id="chartContainer" style="height: 300px; width: 80%; float: right; ;"></div> 
+        <button class="save">
+          <a href="report.html" style="text-decoration:none ; ">save</a>
+        </button>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
       
         
     

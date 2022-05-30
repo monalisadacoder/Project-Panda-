@@ -1,0 +1,254 @@
+body{
+    margin: 5px;
+    padding: 0px;
+    background-color: #f9fbfc;
+}
+.container-fluid{
+    background-color: rgb(250, 250, 248);
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 25px;
+}
+.primary-logo{
+    height: 60px;
+    
+}
+.navbar-brand{
+    margin-bottom: 10px;
+}
+.icon{
+    height: 30px;
+}
+.btn-outline-danger{
+    border-radius: 20px;
+}
+.icon1{
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.nav-link{
+    color:  #221f1f;
+}
+.icon2{
+    height: 18px;
+}
+#navbar-example3{
+    width: 200px;
+    background-color:  #221f1f;
+}
+#nav1{
+    margin-left: 80px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px #888888;
+}
+#chart_div{
+    width: 900px;
+    margin-left: 300px;
+    margin-top: 100px;
+    height: 500px;
+    padding:0px;
+    border:0px;
+
+}
+#menu{
+    margin-left: 70px;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    color:red;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:red;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+body {
+    font-family: "Lato", sans-serif;
+  }
+  #menuButton{
+    color:red;
+    height:60px;
+    margin-left:30px ;
+    margin-top: 110px;
+    padding-top: 90px;
+    
+}
+  .sidenav {
+    height: 78%;
+    width: 0;
+    position:absolute;
+    z-index: 1;
+    top: 10px;
+    left: 22px;
+    background-color: #221f1f ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+    margin-top: 120px;
+    box-shadow: #f70404;
+    text-align:left;
+   
+  }
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color:  #0eb02c;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0eb02c;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f70404;
+  }
+  .dropdown-btn:hover {
+    color: #f70404;}
+    active {
+        background-color: green;
+        color: white;
+      }
+      
+      .dropdown-container {
+        display: none;
+        background-color: #221f1f;
+        padding-left: 15px;
+      }
+      .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+      }
+      
+  
+  .sidenav .closebtn {
+    position:absolute;
+    top: 0;
+    left: 0px;
+    font-size: 40px;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.chartContainer{
+    margin-right: 100px;
+}  
+.navibar {
+    width: 70%;
+    background-color: #faf8f8;
+    overflow: auto;
+  }
+  
+  .navibar a {
+    float: left;
+    padding: 12px;
+    color:  #221f1f;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.33%; /* Four links of equal widths */
+    text-align: center;
+  }
+  
+  .navibar a:hover {
+    background-color: rgb(227, 9, 9);
+  }
+  
+  .navibar a.active {
+    background-color: #04aa17;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navibar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+ 
+#save{
+    text-decoration: none;
+    margin-top: 70px;
+    margin-left:1080px;
+    width:100px;
+    height:50px;
+    color: #0eb02c;
+    border-radius: 20px;
+    background-color: #f9fbfc;
+    border-color: red;
+    transition: 0.5s;
+    font-style: arial ;
+  
+}
+#save:hover{
+   background-color: #ec7f6c;
+   color: #f9fbfc;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+.save.active{
+    color: rgb(39, 167, 7);
+}
+.profile{
+ float: right;
+}
+.p{
+ margin-left: 300px;
+ line-height: 5px;
+}
+.resetPassword{
+    margin-left: 400px;
+    color: #0eb02c;
+
+   
+    
+}
+
+.reset{
+    padding-left: 20%;
+    padding-top: 100px;
+    height: 20px;
+}
+.section{
+  margin-left: 30px;
+}
