@@ -16,10 +16,14 @@ div.image{
 }
 
 .forms{
-    background-color: rgba(16, 16, 16, 0.4);
+    background-color: rgba(22, 21, 21, 0.979);
     text-align: center;
-    margin-left: 400px;
+    margin-top: 50px;
+    margin-left: 380px;
     padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 8%;
 
  
     
@@ -50,8 +54,9 @@ h4{
     text-align: center;
     color: rgb(247, 246, 248);
     font-size:xx-large;
-    padding-top: 0.050px;
+    padding-top:0px;
     margin: 0;
+
 }
 h1{
     text-align: center;
@@ -67,7 +72,7 @@ input{
  
 }
 button{
-    background-color: rgb(240, 240, 44);
+    background-color: rgb(250, 250, 8);
     border-radius: 0.8em;
     border-style: none;
     width: 100px;
@@ -85,10 +90,13 @@ body{
     background-color: rgb(85, 83, 83);
 }
 #fyp{
-    padding-bottom: 5px;
-    padding-right: 2px;
+    padding-bottom: 20px;
+    padding-right: 150px;
     border: 0px;
     margin: 0px;
     color:aliceblue;
     
+}
+.login{
+    padding-left: 10px ;
 }

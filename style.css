@@ -252,3 +252,23 @@ body {
 .section{
   margin-left: 30px;
 }
+.icon-badge-container {
+  margin-top:18px;
+  position:relative;
+}
+.icon-badge-icon {
+  font-size: 27px;
+  position: relative;
+}
+.icon-badge {
+  background-color: red;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  width:18px;
+  height:16px;
+  border-radius: 100%;
+  position: absolute; /* changed */
+  top: -6px; /* changed */
+  left: 16px; 
+}
