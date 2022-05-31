@@ -97,7 +97,7 @@ li a:hover:not(.active) {
 </head>
 <body>
 
-<form action="/action_page.php">
+
   <div class="container">
     <ul>
         <li><a class="active" href="register.html">Registration</a></li>
@@ -106,21 +106,25 @@ li a:hover:not(.active) {
       
       
     <!-- <h1>Register</h1> -->
-    <p>Please fill in this form to create an account.</p>
+    <form action="check.php" method="post">
+      <p>Please fill in this form to create an account.</p>
     <hr>
     <img class="usern" src="profile pic.jpg" alt="profileIcon" style="width:250px;height:250px; float: right;">
 
     <label for="email"><b>Work Email</b></label><br>
-    <input type="text" placeholder="Enter Work Email" name="email" id="email" required><br>
+    <input type="email" placeholder="Enter Work Email" name="email" id="email" required><br>
 
     <label for="email"><b>Telephone</b></label><br>
-    <input type="text" placeholder="Enter phone number" name="email" id="email" required><br>
+    <input type="text" placeholder="Enter phone number" name="tel" id="email" required><br>
 
     <label for="email"><b>Shift</b></label><br>
-    <input type="text" placeholder="Night Shift" name="email" id="email" required><br>
+    <select name="shift">
+      <option value="day">Day</option>
+      <option value="night">Night</option>
+    </select><br>
 
     <label for="email"><b>Position</b></label><br>
-    <input type="text" placeholder="Position" name="email" id="email" required><br>
+    <input type="text" placeholder="Position" name="position" id="email" required><br>
 
     <label for="psw"><b>Password</b></label><br>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
@@ -130,11 +134,13 @@ li a:hover:not(.active) {
     <hr>
    
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" name="submit" class="registerbtn">Register</button>
+    </form>
+    
   </div>
   
   
-</form>
+
 
 </body>
 </html>
