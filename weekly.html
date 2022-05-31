@@ -10,49 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="weekly.js">
     <title>Home Page</title>
-    <script>
-      window.onload = function () {
-      
-      var dps = []; // dataPoints
-      var chart = new CanvasJS.Chart("chartContainer", {
-        title :{
-          text: "Power (Watts)"
-        },
-        data: [{
-          type: "line",
-          dataPoints: dps
-        }]
-      });
-      
-      var xVal = 0;
-      var yVal = 100; 
-      var updateInterval = 1000;
-      var dataLength = 20; // number of dataPoints visible at any point
-      
-      var updateChart = function (count) {
-      
-        count = count || 1;
-      
-        for (var j = 0; j < count; j++) {
-          yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
-          dps.push({
-            x: xVal,
-            y: yVal
-          });
-          xVal++;
-        }
-      
-        if (dps.length > dataLength) {
-          dps.shift();
-        }
-      
-        chart.render();
-      };
-      
-      updateChart(dataLength);
-      setInterval(function(){updateChart()}, updateInterval);
-      
-      }</script></head>
+   
       
 <body>
   <div>
@@ -77,65 +35,141 @@
         
           
    </nav>
-      <!-- side bar part -->
-      <div id="mySidenav" class="sidenav">
-        <li id="profileIcon"><h5>&nbsp;<img class="icon1" alt="users-icon" src="bxs_user-circle.png"></h5></li>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="profile.html" id="mail">****@gmail.com</a>
-        <a href="register.html">Add new user</a>
-        <a href="forms.html">Forms</a>
-        <button class="dropdown-btn">Reports
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="daily.html">Daily</a>
-          <a href="weekly.html">Weekly</a>
-          <a href="monthly.html">Monthly</a>
-        </div>
-        <!-- <a href="#">Contact</a> -->
-      </div></div>
-     
-      <span id="menuButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-   
-      <script>
-        function myFunction(x) {
-          x.classList.toggle("change");
-        }
-        </script>
-     
-         
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("mySidenav").style.borderRadius ="10px";
-        document.getElementById("mySidenav").style.boxShadow;
-      }
       
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
-      <script>
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-        
-        for (i = 0; i < dropdown.length; i++) {
-          dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-              dropdownContent.style.display = "none";
-            } else {
-              dropdownContent.style.display = "block";
-            }
-          });
-        }
-        </script>
+<div class="content_box">
+	<div class="left_bar">
+	    <ul class=" nav-tabs--vertical nav" role="navigation">
+		<li class="nav-item">
+			<a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem">Reports</a>
+		</li>
+		<li class="nav-item">
+			<a href="#ipsum" class="nav-link" data-toggle="tab" role="tab" aria-controls="ipsum">Monthly</a>
+		</li>
+		<li class="nav-item">
+			<a href="#dolor" class="nav-link " data-toggle="tab" role="tab" aria-controls="dolor">Weekly</a>
+		</li>
+		<li class="nav-item">
+			<a href="#sit-amet" class="nav-link" data-toggle="tab" role="tab" aria-controls="sit-amet">Daily</a>
+		</li>
+	</ul>
+	</div>
+    <div class="right_bar ">
+        	<div class="tab-content ">
+		<div class="tab-pane fade show active" id="lorem" role="tabpanel">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+		<div class="tab-pane fade" id="ipsum" role="tabpanel">
+		<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+		</div>
+		<div class="tab-pane fade" id="dolor" role="tabpanel">
+		<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+		</div>
+		<div class="tab-pane fade" id="sit-amet" role="tabpanel">
+		<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@example.com</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@example.com</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
         <div id="chartContainer" style="height: 300px; width: 80%; float: right; ;"></div>
         <button type="button" id="save" class="btn btn-outline-danger">
-          <a href="report.html" style="text-decoration:none ; color: rgb(241, 11, 11);">Download</a></button>
-      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+          <a href="report.html" style="text-decoration:none ; color: rgb(241, 11, 11);" download>Download</a></button>
+      
       
         
     
