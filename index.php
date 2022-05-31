@@ -56,6 +56,17 @@
       
 <body>
   <div>
+    <?php
+    include("config.php");
+
+    session_start();
+    if(isset($_SESSION['id'])){
+//$id=$_SESSION['id'];
+$res=mysqli_query($link,"select WorkEmail from registration where id='".$_SESSION['id']."'");  
+$rows=mysqli_fetch_array($res);
+$Euser=$rows['WorkEmail'];
+}
+    ?>
     <!-- nav bar -->
     <nav id="nav1" class="navbar navbar-light bg-light">
         <div class="container-fluid">
@@ -66,11 +77,12 @@
           <a href="dashboard.html" class="a">Home</a>
           <a href="forms.html" class="b">Forms</a>
           <a href="report.html" class="c">Reports</a>
+          <a href="#" class="c"><?php if(isset($_SESSION['id'])){ echo $Euser;}else{echo "Not logged in";}?></a>
         </a></div>
         <h3>
             
               <img class="icon" alt="users-icon" src="Group 10.png">
-            <button type="button" class=" btn btn-outline-danger">Log Out</button>
+           <a href='logout.php'> <button type="button" class=" btn btn-outline-danger">Log Out</button></a>
             <img class="icon" alt="users-icon" src="user.png">
         </h3>
         
