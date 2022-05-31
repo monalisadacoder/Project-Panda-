@@ -11,13 +11,18 @@
             
     body {
         background-image: url(./manAndwoman.jpg);
-        background-color: #4d4949; /* Used if the image is unavailable */
+        background-color: #817c7c; /* Used if the image is unavailable */
        
     
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size:cover;
-    
+    }
+    #fyp{
+        color: orangered;
+    }
+    #fyp:hover{
+        color: blue;
     }
 </style>
 </head>
@@ -29,10 +34,13 @@
          <h4>Login</h4>
          <h6 class="msg"></h6>
          <div class="login">
+
+
      <form action="login.php" method="post">
          <input type="email" id="fname" name="email" placeholder="User email"><br><br>
          <input type="password" id="todos" placeholder="User Password" name="pass"><br><br>
          <button type="submit" class="btn btn-waves">LOGIN</button></a> 
+ 
         </form>
         
         <div class="password">
