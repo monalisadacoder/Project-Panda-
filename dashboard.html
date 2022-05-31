@@ -58,16 +58,16 @@
 <body>
   <div>
     <!-- nav bar -->
-    <nav id="nav1" class="navbar navbar-light bg-light">
+    <nav id="nav1" class="navbar navbar-light bg-light" >
         <div class="container-fluid">
           <a class="navbar-brand">
             <img class="primary-logo" alt="action-img" src="TotalEnergies-Emblem.png">
         </a>
-        <div class="navibar">
+       <!--<div class="navibar">
           <a href="dashboard.html" class="a">Home</a>
           <a href="forms.html" class="b">Forms</a>
           <a href="report.html" class="c">Reports</a>
-        </a></div>
+        </a></div>-->
         
          <h4>
            <a href="notify.html">
@@ -78,16 +78,15 @@
          </h4>   
           
             <button type="button" class=" btn btn-outline-danger">
-              <a href="login.html" style="text-decoration:none ; color: rgb(3, 148, 3);">Log Out</a></button>
+              <a href="login.html" style="text-decoration:none ;">Log Out</a></button>
             <img class="icon" alt="users-icon" src="user.png">
-        
         
           
    </nav>
       <!-- side bar part -->
       <div id="mySidenav" class="sidenav">
-        <li id="profileIcon"><h5>&nbsp;<img class="icon1" alt="users-icon" src="bxs_user-circle.png"></h5></li>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li id="profileIcon"><h5>&nbsp;&nbsp;&nbsp;<img class="icons" src="./imgh.png" style="height: 100px; width: 100px; border-radius: 50px;"></h5></li>
+        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
         <a href="profile.html" id="mail">****@gmail.com</a>
         <a href="register.html">Add new user</a>
         <a href="forms.html">Forms</a>
@@ -140,8 +139,10 @@
         }
         </script>
         <div id="chartContainer" style="height: 300px; width: 80%; float: right; ;"></div>
-        <button type="button" id="save" class="btn btn-outline-danger">
-          <a href="report.html" style="text-decoration:none ; color: rgb(241, 11, 11);">Download</a></button>
+        
+          <a href="report.html" style="text-decoration:none ; color:blue;"><i class="fa fa-download fa-3x" aria-hidden="true" style="margin-top: 9%; margin-left: 90%; 
+            "></i></a></button><br>
+            <label for="file" style="margin-left:1200px;">Download</label>
       <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
       
         

@@ -1,7 +1,7 @@
 body{
     margin: 5px;
     padding: 0px;
-    background-color: #f9fbfc;
+    background-color: #d7eaf3;
 }
 .container-fluid{
     background-color: rgb(250, 250, 248);
@@ -20,6 +20,8 @@ body{
     height: 30px;
 }
 .btn-outline-danger{
+  background-color: #18cc9f;
+  color:#000;
     border-radius: 20px;
 }
 .icon1{
@@ -38,7 +40,7 @@ body{
     background-color:  #221f1f;
 }
 #nav1{
-    margin-left: 80px;
+    /*margin-left: 80px;*/
     margin-bottom: 10px;
     border-radius: 20px;
     box-shadow: 5px 10px 8px #888888;
@@ -98,12 +100,11 @@ body {
     z-index: 1;
     top: 10px;
     left: 22px;
-    background-color: #221f1f ;
+    background-color:(250, 250, 248);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 15px;
     margin-top: 120px;
-    box-shadow: #f70404;
     text-align:left;
    
   }
@@ -126,18 +127,18 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #0eb02c;
+    color: #0eb09a;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #f70404;
+    color:blue;
   }
   .dropdown-btn:hover {
-    color: #f70404;}
+    color:blue;}
     active {
-        background-color: green;
+        background-color:#0eb09a ;
         color: white;
       }
       
@@ -185,7 +186,7 @@ body {
   }
   
   .navibar a:hover {
-    background-color: rgb(227, 9, 9);
+    background-color: rgb(9, 212, 227);
   }
   
   .navibar a.active {
