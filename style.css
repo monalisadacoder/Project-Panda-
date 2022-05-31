@@ -42,8 +42,9 @@ body{
 #nav1{
     /*margin-left: 80px;*/
     margin-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 5px 10px 8px #888888;
+
 }
 #chart_div{
     width: 900px;
@@ -144,7 +145,6 @@ body {
       
       .dropdown-container {
         display: none;
-        background-color: #221f1f;
         padding-left: 15px;
       }
       .fa-caret-down {
